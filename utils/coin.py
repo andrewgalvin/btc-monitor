@@ -11,3 +11,10 @@ class Coin:
             "updated": self.updated,
             "price":self.price
         })
+
+    def to_json(self):
+        return {
+            "name": self.name,
+            "updated": self.updated,
+            "price":self.price
+        }
